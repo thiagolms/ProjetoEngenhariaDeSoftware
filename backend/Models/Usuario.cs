@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace backend.Models
 {
-    public partial class Usuarios
+    public partial class Usuario
     {
         public int UsuarioId { get; set; }
         public string Nome { get; set; }
