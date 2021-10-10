@@ -1,6 +1,7 @@
 using Backend.Context;
 using Backend.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -17,6 +18,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Backend
 {
     public class Startup
@@ -32,25 +35,54 @@ namespace Backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<ApplicationUser, IdentityRole>(options => {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 4;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+            })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
             services.AddControllers();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-         options.TokenValidationParameters = new TokenValidationParameters
-         {
-             ValidateIssuer = false,
-             ValidateAudience = false,
-             ValidateLifetime = true,
-             ValidateIssuerSigningKey = true,
-             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:key"])),
-             ClockSkew = TimeSpan.Zero
-         });
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["jwt:key"])),
+            ClockSkew = TimeSpan.Zero
+        });
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("Administrators", new AuthorizationPolicyBuilder()
+            //        .RequireAuthenticatedUser()
+            //        .RequireClaim("role", "Administrators")
+            //        .Build());
+            //});
+        }
+
+        private async Task CreateRoles(IServiceProvider serviceProvider)
+        {
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            //var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            string[] rolesNames = { "Admin", "User", "Secretaria" };
+            IdentityResult result;
+            foreach (var namesRole in rolesNames)
+            {
+                var roleExist = await roleManager.RoleExistsAsync(namesRole);
+                if (!roleExist)
+                {
+                    result = await roleManager.CreateAsync(new IdentityRole(namesRole));
+                }
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -65,6 +97,7 @@ namespace Backend
             {
                 endpoints.MapControllers();
             });
+            CreateRoles(serviceProvider).Wait();
         }
     }
 }

@@ -1,16 +1,14 @@
 ﻿using Backend.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Backend.Controllers
 {
@@ -20,13 +18,15 @@ namespace Backend.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
         public UsuariosController(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IConfiguration configuration)
+            IConfiguration configuration, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
             _configuration = configuration;
         }
         [HttpGet]
@@ -39,8 +39,17 @@ namespace Backend.Controllers
         {
             var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
             var result = await _userManager.CreateAsync(user, model.Password);
+
             if (result.Succeeded)
             {
+                //-------------------atribuir role ao user------------------------------
+
+                var applicationRole = await _roleManager.FindByNameAsync(model.Role);
+                if (applicationRole != null)
+                {
+                    IdentityResult roleResult = await _userManager.AddToRoleAsync(user, applicationRole.Name);
+                }
+                //-------------------atribuir role ao user------------------------------
                 return BuildToken(model);
             }
             else
@@ -69,7 +78,7 @@ namespace Backend.Controllers
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.UniqueName, userInfo.Email),
-                new Claim("meuValor", "oque voce quiser"),
+                new Claim(ClaimTypes.Role, userInfo.Role),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
