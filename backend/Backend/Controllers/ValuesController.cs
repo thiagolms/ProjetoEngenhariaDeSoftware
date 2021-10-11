@@ -21,7 +21,7 @@ namespace Backend.Controllers
             return new string[] { "Teste 1", "Teste 2" };
         }
 
-        [Authorize]
+        [Authorize(Roles = "Secretaria")]
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
