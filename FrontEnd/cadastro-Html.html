@@ -27,29 +27,31 @@
             <!-- NOME DA SECRETARIA -->
             <div class="campo-cadastro">
                 <label for="name"> Nome: </label>
-                <input type="text" name="nome" id="nome" placeholder="Digite o nome completo" class="nomeSecret"
-                    required>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome completo" class="nomeSecret" required maxlength="40">
             </div>
             <!-- CPF DA SECRETARIA -->
             <div class="campo-cadastro">
                 <label for="rg"> CPF: </label>
-                <input type="cpf" name="cpf" id="cpf" class="cpfSecret" placeholder="Digite o CPF" required>
+                <input type="cpf" name="cpf" id="cpf" class="cpfSecret" placeholder="Digite o CPF (Apenas números)" maxlength="11" required>
             </div>
             <!-- RG DA SECRETARIA -->
             <div class="campo-cadastro">
                 <label for="rg"> RG: </label>
-                <input type="rg" name="rg" id="rg" class="rgSecret" placeholder="Digite seu RG" required>
+                <input type="rg" name="rg" id="rg" class="rgSecret" placeholder="Digite o RG (Apenas números)" maxlength="9" required>
             </div>
             <!-- EMAIL DA SECRETARIA -->
             <div class="campo-cadastro">
                 <label for="email"> Email: </label>
-                <input type="email" name="email" id="email" class="emailSecret" placeholder="Digite seu Email" required>
+                <input type="email" name="email" id="email" class="emailSecret" placeholder="Digite seu Email" maxlength="40" required>
             </div>
             <!-- SENHA PARA SECRETARIA -->
             <div class="campo-cadastro">
                 <label for="password"> Senha: </label>
-                <input type="password" name="password" id="senha" class="senhaSecret" placeholder="Digite uma senha"
-                    required>
+                <input type="password" name="senha" id="senha" class="senhaSecret" placeholder="Digite uma senha" maxlength="15" required>
+            </div>
+            <div class="campo-cadastro">
+                <label for="password"> Confirme sua Senha: </label>
+                <input type="password" name="confSenha" id="senha" class="senhaSecret" placeholder="Digite a mesma senha" maxlength="15" required>
             </div>
             <!-- QUAL O SENHA DA SECRETARIA -->
             <!-- <p> Sexo:</p>
