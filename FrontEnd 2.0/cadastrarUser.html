@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Administrado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="X-UA-Compatible" content="pt_br" />
+
+    <link rel="stylesheet" href="CSS/style-adm.css">
+    <link rel="stylesheet" href="CSS/style-cadastro.css">
+
+</head>
+<div class="grid-topo">
+    <p> Área restrita do Administrador</p>
+    <img class="imgUser" src="img/user.png" alt="">Usuário:
+    <div>
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+        <a href="areaAdm.html">Inicio</a>
+    </div>
+    <div>
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        <a href="login.html">Sair</a>
+    </div>
+
+</div>
+
+<div class="navbar">
+    <div>
+        <br>
+        <br>
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+        <a href="cadastrarUser.html">Cadastrar Usuário</a>
+    </div>
+    <div>
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        <a href="addProtocolo.html">Novo Protocolo</a>
+    </div>
+    <div>
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        <a href="evaluate-protocol.html">Avaliar Protocolo</a>
+    </div>
+    <div>
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <a href="protocols.html">Protocolos Pendentes</a>
+    </div>
+    <div>
+        <i class="fa fa-check-square" aria-hidden="true"></i>
+        <a href="protocols.html">Protocolos Concluidos</a>
+    </div>
+    <div>
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        <a href="add-reviewer.html">Atribuir Parecerista</a>
+    </div>
+</div>
+
+<body class="fundo-cadastroSecret">
+
+    <form method="POST" class="form">
+        <div class="campo">
+            <div class="campo-top">
+                <h2 class="titulo"> Cadastrar Usuário(a)</h2>
+            </div>
+
+            <!-- NOME do usuário  -->
+            <div class="campo-cadastro">
+                <label for="name"> Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome completo" class="nomeSecret" required maxlength="30">
+            </div>
+            <!-- EMAIL do usuário  -->
+            <div class="campo-cadastro">
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" class="emailSecret" placeholder="Digite seu Email" maxlength="40" required>
+            </div>
+            <!-- CPF do usuário  -->
+            <div class="campo-cadastro">
+                <label for="rg"> CPF: </label>
+                <input type="cpf" name="cpf" id="cpf" class="cpfSecret" placeholder="Digite o CPF (Apenas números)" maxlength="11" required>
+            </div>
+            <!-- RG do usuário -->
+            <div class="campo-cadastro">
+                <label for="rg"> RG: </label>
+                <input type="rg" name="rg" id="rg" class="rgSecret" placeholder="Digite o RG (Apenas números)" maxlength="9" required>
+            </div>
+
+            <!-- SENHA e Confirmar senha -->
+            <div class="campo-cadastro">
+                <label for="password"> Senha: </label>
+                <input type="password" name="senha" id="senha" class="senhaSecret" placeholder="Digite uma senha" maxlength="15" required>
+            </div>
+            <div class="campo-cadastro">
+                <label for="password"> Confirme sua Senha: </label>
+                <input type="password" name="confSenha" id="senha" class="senhaSecret" placeholder="Digite a mesma senha" maxlength="15" required>
+            </div>
+            <!-- Checkbox para escolher tipo de função -->
+            <p>Setor</p>
+
+            <div>
+                <input type="checkbox" id="secretaria" name="secretaria" checked>
+                <label for="secretaria">Secretaria</label>
+                <input type="checkbox" id="presidente" name="presidente">
+                <label for="presidente">Presidente</label>
+                <input type="checkbox" id="pesquisador" name="pesquisador">
+                <label for="pesquisador">Pesquisador</label>
+            </div>
+
+            <!-- BOTÃO PARA CADASTRAR SECRETARIA -->
+            <div class="campo-cadastro">
+                <button class="botaoCadastrar" type="submit"> Cadastrar </button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
