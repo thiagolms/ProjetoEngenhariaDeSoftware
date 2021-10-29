@@ -19,6 +19,12 @@
     color: rgb(255, 255, 255);
 }
 
+.form3 {
+    width: 80%;
+    margin-left: auto;
+    padding: 10px;
+}
+
 
 /* NavBar */
 
@@ -65,4 +71,22 @@
 .navbar div:hover {
     background-color: #6b9080;
     color: rgb(0, 0, 0);
+}
+
+.campo-cadastroProt>button {
+    background-color: #6b9080;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    color: #f6fff8;
+    border: 0;
+    outline: 0;
+}
+
+.campo-resumo>input {
+    border-radius: 5px;
+    outline: 0;
+    width: 20%;
+    height: 30px;
+    padding: 5px;
 }
