@@ -7,7 +7,7 @@ use PDO;
 class Database extends PDO
 {
     // configuração do banco de dados
-    private string $DB_NAME = 'login';
+    private string $DB_NAME = 'spcdea';
     private string $DB_USER = 'root';
     private ?string $DB_PASSWORD = null;
     private string $DB_HOST = 'localhost';

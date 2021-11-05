@@ -23,11 +23,12 @@ class Usuario
         return $result->rowCount() > 0;
     }
 
-    public static function post($nome, $email, $senha): bool
+    public static function post($nome, $email, $senha, $id_role): bool
     {
         $conn = new Database();
-        $result = $conn->executeQuery('INSERT INTO usuarios (nome,email,senha)
-        VALUES (:nome,:email,:senha)', [':nome' => $nome, ':email' => $email, ':senha' => $senha]);
+        $result = $conn->executeQuery('INSERT INTO usuarios (nome,email,senha, id_role)
+        VALUES (:nome,:email,:senha, :id_role)', [':nome' => $nome, ':email' => $email, ':senha' => $senha,
+            ':id_role' => $id_role]);
         return $result->rowCount() > 0;
     }
 }
