@@ -1,6 +1,6 @@
 <?php
 use Application\models\Protocolo;
-require_once '../models/Protocolo.php';
+require 'vendor/autoload.php';
 /** COLETA AS INFORMAÇÕES DIGITADAS NO FORMULÁRIO addProtocolo.html **/
 $especie_animal = $_POST['animal'];
 $justificava = $_POST['justificava'] ?? null;

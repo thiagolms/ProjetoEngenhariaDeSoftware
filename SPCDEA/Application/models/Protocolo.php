@@ -1,7 +1,7 @@
 <?php
 namespace Application\models;
 use Application\core\Database;
-require_once '../core/Database.php';
+require 'vendor/autoload.php';
 class Protocolo
 {
     public static function post($especie_animal, $justificativa, $resumo_pt, $resumo_en, $data_fim): bool
