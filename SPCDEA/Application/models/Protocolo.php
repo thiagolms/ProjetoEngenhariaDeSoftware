@@ -1,6 +1,6 @@
 <?php
 namespace Application\models;
-use Application\core\Database;
+use Application\banco\Database;
 require 'vendor/autoload.php';
 class Protocolo
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Application\core;
+namespace Application\banco;
 
 use PDO;
 
 class Database extends PDO
 {
     // configuração do banco de dados
-    private string $DB_NAME = 'spcdea';
-    private string $DB_USER = 'root';
-    private ?string $DB_PASSWORD = null;
-    private string $DB_HOST = 'localhost';
+    private string $DB_NAME = 'heroku_e0320cc29e6e5a4';
+    private string $DB_USER = 'ba0d3d763c3120';
+    private string $DB_PASSWORD = '2a25cb5d';
+    private string $DB_HOST = 'us-cdbr-east-04.cleardb.com';
 
     // armazena a conexão
     private PDO $conn;
