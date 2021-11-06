@@ -1,11 +1,8 @@
 <?php
 
 namespace Application\models;
-
 use Application\core\Database;
-
 require_once '../core/Database.php';
-
 class Usuario
 {
     public static function findById(int $id): bool|array

@@ -1,6 +1,6 @@
 <?php
 use Application\models\Usuario;
-require 'vendor/autoload.php';
+require_once '../models/Usuario.php';
 /** COLETA AS INFORMAÇÕES DIGITADAS NO FORMULÁRIO FORM_SECRETARIA.PHP **/
 $nome = $_POST['nome'] ?? null;
 $email = $_POST['email'] ?? null;
