@@ -9,7 +9,7 @@ $senha = $_POST['senha'] ?? null;
 $usuario = new Usuario();
 $res = $usuario->login($email, md5($senha));
 if ($res) {
-    $resultado = $usuario->findById(2);
+    $resultado = $usuario->findById(25);
     session_start();
     $_SESSION['id_usuario'] = $resultado['id_usuario'];
     $_SESSION['email'] = $resultado['email'];

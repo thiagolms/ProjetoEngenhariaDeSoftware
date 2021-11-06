@@ -11,7 +11,7 @@ if (empty($nome) || empty($email) || empty($senha)) {
     echo "É preciso preencher todos os campos do formulário de cadastro!";
     exit();
 }
-$resultado = Usuario::post($nome, $email, md5($senha), 2);
+$resultado = Usuario::post($nome, $email, md5($senha), 15);
 if ($resultado) {
     header('Location: ../views/areaAdm.html');
 }
