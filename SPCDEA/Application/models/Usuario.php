@@ -1,11 +1,8 @@
 <?php
 
 namespace Application\models;
-
-use Application\core\Database;
-
-require_once '../core/Database.php';
-
+use Application\banco\Database;
+require_once '../banco/Database.php';
 class Usuario
 {
     public static function findById(int $id): bool|array
@@ -23,11 +20,12 @@ class Usuario
         return $result->rowCount() > 0;
     }
 
-    public static function post($nome, $email, $senha): bool
+    public static function post($nome, $email, $senha, $id_role): bool
     {
         $conn = new Database();
-        $result = $conn->executeQuery('INSERT INTO usuarios (nome,email,senha)
-        VALUES (:nome,:email,:senha)', [':nome' => $nome, ':email' => $email, ':senha' => $senha]);
+        $result = $conn->executeQuery('INSERT INTO usuarios (nome,email,senha, id_role)
+        VALUES (:nome,:email,:senha, :id_role)', [':nome' => $nome, ':email' => $email, ':senha' => $senha,
+            ':id_role' => $id_role]);
         return $result->rowCount() > 0;
     }
 }

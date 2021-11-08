@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Tela de cadastro da Secretaria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta property="X-UA-Compatible" content="pt_br" />
-    <!-- diretório do CSS (Mudar para functions.php) -->
-    <link rel="stylesheet" href="stylesheets/cadastro.css">
+    <link rel="stylesheet" href="CSS/cadastro.css">
 </head>
 <body class="fundo-cadastroSecret">
-<form method="POST" action="../controllers/insere.php" class="form">
+<form method="POST" action="../controllers/insere_usuario.php" class="form">
     <div class="campo">
         <div class="campo-top">
             <h2 class="titulo"> Cadastrar Secretaria(o) do CAUAE </h2>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Administrado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="X-UA-Compatible" content="pt_br" />
+    <link rel="stylesheet" href="CSS/style-adm.css">
+    <link rel="stylesheet" href="CSS/style-addProtocolo.css">
+</head>
+<div class="grid-topo">
+    <p> Área restrita do Administrador</p>
+    <img class="imgUser" src="images/user.png" alt="">Usuário:
+    <div>
+        <a href="areaAdm.html">Inicio</a>
+    </div>
+    <div>
+        <a href="../../../index.php">Sair</a>
+    </div>
+</div>
+<div class="navbar">
+    <div>
+        <a href="cadastrarUser.html">Cadastrar Usuário</a>
+    </div>
+    <div>
+        <a href="addProtocolo.html">Novo Protocolo</a>
+    </div>
+    <div>
+        <a href="#">Avaliar Protocolo</a>
+    </div>
+    <div>
+        <a href="#">Protocolos Pendentes</a>
+    </div>
+    <div>
+        <a href="#">Protocolos Concluidos</a>
+    </div>
+    <div>
+        <a href="#">Atribuir Parecerista</a>
+    </div>
+</div>
+<body class="fundo-cadastroSecret">
+    <form method="POST" class="form" action="../controllers/insere_protocolo.php">
+        <div class="campo-prot">
+            <div class="campo-protocolo">
+                <h2 class="titulo"> Adicionar novo Protocolo</h2>
+            </div>
+            <div class="campo-resumo">
+                <div class="campo-animal">
+                    <label for="animal"> Especie do Animal: </label>
+                    <input type="text" name="animal" id="animal" placeholder="Digite a espécie do Animal" class="animalSecret" required maxlength="20">
+                </div>
+                <div class="resumos">
+                    <h3>Justifique no campo abaixo o uso do animal :</h3>
+                    <textarea rows="6" cols="2" placeholder="Justifique aqui o uso do animal " name="justificava"></textarea>
+                    <h3> Resumo do Trabalho - Português: </h3>
+                    <textarea rows="6" cols="2" placeholder="Faça seu resumo aqui " name="resumo_pt"></textarea>
+                    <h3> Resumo do Trabalho- Inglês: </h3>
+                    <textarea rows="6" cols="2" placeholder="Make your summary here " name="resumo_en"></textarea>
+                </div>
+                <div class="dataPesquisa">
+                    <label for="date"> Dia que pretende terminar pesquisa: </label>
+                    <input id="date" type="date" name="data">
+                </div>
+                <div>
+                    <button class="botaoCadastrar" type="submit"> Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

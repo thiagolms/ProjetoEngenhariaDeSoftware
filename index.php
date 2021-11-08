@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="X-UA-Compatible" content="pt_br" />
     <!-- diretório do CSS (Mudar para functions.php) -->
-    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="SPCDEA/Application/views/CSS/login.css">
 </head>
 <body class="fundo">
-<form method="POST" class="form" action="../controllers/login.php">
+<form method="POST" class="form" action="SPCDEA/Application/controllers/login.php">
     <div class="campo">
         <div class="campo-top">
             <!-- imagem e titulo -->
-            <img class="imgUser" src="images/user.png " alt="">
+            <img class="imgUser" src="SPCDEA/Application/views/images/user.png " alt="">
             <h2 class="titulo"> Login </h2>
             <!-- <p> Gerenciador ADM</p> -->
         </div>
