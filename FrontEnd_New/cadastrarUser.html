@@ -81,17 +81,17 @@
                 <label for="password"> Confirme sua Senha: </label>
                 <input type="password" name="confSenha" id="senha" class="senhaSecret" placeholder="Digite a mesma senha" maxlength="15" required>
             </div>
-            <!-- Checkbox para escolher tipo de função -->
+            <!-- Select para escolher tipo de função -->
             <p>Setor</p>
 
             <div>
-                <input type="checkbox" id="secretaria" name="secretaria" checked>
-                <label for="secretaria">Secretaria</label>
-                <input type="checkbox" id="presidente" name="presidente">
-                <label for="presidente">Presidente</label>
-                <input type="checkbox" id="pesquisador" name="pesquisador">
-                <label for="pesquisador">Pesquisador</label>
+                <select name="select">
+                    <option value="secretaria" id="secretaria" name="secretaria">Secretaria</option>
+                    <option value="presidente" id="presidente" name="presidente" selected>Presidente</option>
+                    <option value="pesquisador" id="pesquisador" name="pesquisador">Pesquisador</option>
+                  </select>
             </div>
+            <br>
 
             <!-- BOTÃO PARA CADASTRAR SECRETARIA -->
             <div class="campo-cadastro">
