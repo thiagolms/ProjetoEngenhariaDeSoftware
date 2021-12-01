@@ -58,13 +58,6 @@
     box-shadow: 1px 1px 5px #80cebd;
 }
 
-.grid-topo {
-    display: grid;
-    grid-template-columns: repeat(8, 13%);
-    grid-template-rows: repeat(2, 1vw);
-    background-color: #6b9080;
-}
-
 
 /* NavBar */
 

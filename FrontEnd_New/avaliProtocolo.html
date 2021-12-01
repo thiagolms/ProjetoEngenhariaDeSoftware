@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="X-UA-Compatible" content="pt_br" />
 
-    <link rel="stylesheet" href="css/style-adm.css">
-    <link rel="stylesheet" href="css/style-cadastro.css">
-    <link rel="icon" href="img/img-visao.png">
+    <link rel="stylesheet" href="CSS/style-adm.css">
+    <link rel="stylesheet" href="CSS/style-cadastro.css">
+    <link rel="stylesheet" href="CSS/style-avaliProtocolo.css">
+
 
 </head>
+
 <div class="grid-topo">
     <p> Área restrita do Administrador</p>
     <img class="imgUser" src="img/user.png" alt="">Usuário:
@@ -22,8 +24,8 @@
         <a href="login.html">Sair</a>
     </div>
 </div>
-
 <div class="navbar">
+
     <div>
         <a href="cadastrarUser.html">Cadastrar Usuário</a>
     </div>
@@ -44,5 +46,47 @@
     </div>
 </div>
 
+<body class="fundo-cadastroSecret">
+    <!-- <div class="titulo-avaliar">
+        <h2>Avalie Protocolo</h2>
+    </div> -->
+
+    <form method="POST" class="form3">
+
+        <div class="avalie-proto">
+            <div class="titulo">
+                <h2>Resumo do trabalho - Português :</h2>
+            </div>
+            <div class="resumo">
+                <p> RESUMO DO TRABALHO....</p>
+            </div>
+            <div class="titulo">
+                <h2>Resumo do trabalho - Inglês :</h2>
+            </div>
+            <div class="resumo">
+                <p> RESUMO DO TRABALHO....</p>
+            </div>
+        </div>
+        <div class="avalie-proto">
+            <div class="titulo">
+                <h2>Informações do Projeto :</h2>
+            </div>
+            <br>
+            <h3>Parecer : </h3>
+            <div>
+                <select name="select">
+                    <option value="" id="selecione" name="selecione">Selecione uma opção...</option>
+                    <option value="" id="recomendado" name="recomendado" selected>Recomendado para uso</option>
+                    <option value="" id="naorecomendado" name="naorecomendado" selected>Não recomendado para uso</option>
+                  </select>
+            </div>
+            <br>
+            <div class="button-row">
+                <button class="button">Concluir Avaliação</button>
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
 
 </html>

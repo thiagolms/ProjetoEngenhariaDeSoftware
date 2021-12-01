@@ -1,0 +1,52 @@
+.fundo-cadastroSecret {
+    background-color: #eaf4f4;
+    font-family: sans-serif;
+}
+
+.campo-prot {
+    box-shadow: 1px 1px 5px #80cebd;
+    padding: 30px;
+    background-color: #eaf4f4;
+    border-radius: 5px;
+}
+
+
+/* CSS caixa de Resumo */
+
+.form3 {
+    /* width: 80%;
+    margin-left: auto;
+    padding: 10px; */
+    width: 80%;
+    display: flex;
+    padding: 1% 1% 0% 16%;
+}
+
+.titulo-avaliar {
+    width: 80%;
+}
+
+.avalie-proto {
+    width: 50%;
+    background-color: #eaf4f4;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin-right: 2%;
+}
+
+.titulo {
+    background-color: #6b9080;
+    padding: 0.5% 2%;
+    color: white;
+}
+
+.resumo {
+    width: 50%;
+    color: black;
+    padding: 3%;
+}
+
+.resumo p {
+    text-align: justify;
+}
