@@ -49,8 +49,14 @@
     <form method="POST" class="form6">
         <div class="campo">
             <div class="campo-top">
+
                 <h2 class="titulo"> Atribuir Parecerista</h2>
+                <div id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar Protocolo..." />
+                    <button id="btnBusca">Buscar</button>
+                </div>
                 <div class="dadosProto">
+
                     <label>Código do Protocolo: &nbsp</label>
                     <label>00000</label> &nbsp&nbsp&nbsp&nbsp
                     <label>Nome do usuário : &nbsp</label>
@@ -59,10 +65,15 @@
                     <label>00/00/0000</label> &nbsp&nbsp&nbsp&nbsp
                     <label>Parecer: &nbsp</label>
                     <label>Recomendado ou Não</label>
-                    <a href="visualizarProtocolo.html" class="btn btn-sm">Visualizar</a>
-                    <div class="campo-cadastro">
+                    <a href="visualizarProtocolo.html" class="btn btn-sm">Visualizar</a><br>
+
+
+                    <div class="campo-cadastro1">
                         <label for="name"> Parecerista: </label>
                         <input type="text" name="nome" id="nome" placeholder="Digite o nome Parecerista" class="nomeSecret" required maxlength="30">
+                    </div>
+                    <div class="campo-cadastro">
+                        <button class="botaoCadastrar" type="submit"> Atribuir Parecerista </button>
                     </div>
                 </div>
             </div>
