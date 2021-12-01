@@ -1,0 +1,92 @@
+.fundo-cadastroSecret {
+    background-color: #eaf4f4;
+    font-family: sans-serif;
+}
+
+.campo-prot {
+    box-shadow: 1px 1px 5px #80cebd;
+    padding: 30px;
+    background-color: #eaf4f4;
+    border-radius: 5px;
+}
+
+
+/* CSS caixa de Resumo */
+
+.resumos textarea {
+    width: 100%;
+    background-color: #6b9080;
+    color: rgb(255, 255, 255);
+}
+
+.form3 {
+    width: 80%;
+    margin-left: auto;
+    padding: 10px;
+}
+
+
+/* NavBar */
+
+.navbar {
+    /* display: inline; */
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background-color: #eaf4f4;
+    margin: 0%;
+    padding: 0%;
+    box-shadow: 3px 3px 7px;
+    float: right;
+}
+
+.navbar div {
+    display: flex;
+    padding: 10%;
+    /* border: 0px; */
+    border-right: 15px;
+    border-style: solid;
+    border-color: #6b9080;
+    height: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #eaf4f4;
+}
+
+.navbar div i {
+    width: 25%;
+    font-size: 150%;
+    text-align: left;
+    color: #6b9080;
+}
+
+.navbar div a {
+    flex-grow: 1;
+    color: #070707;
+    font-size: 100%;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar div:hover {
+    background-color: #6b9080;
+    color: rgb(0, 0, 0);
+}
+
+.campo-cadastroProt>button {
+    background-color: #6b9080;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    color: #f6fff8;
+    border: 0;
+    outline: 0;
+}
+
+.campo-resumo>input {
+    border-radius: 5px;
+    outline: 0;
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+}
