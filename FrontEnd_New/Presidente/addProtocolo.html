@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Presidente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="X-UA-Compatible" content="pt_br" />
+    <link rel="stylesheet" href="CSS/style-adm.css">
+    <link rel="stylesheet" href="CSS/style-addProtocolo.css">
+</head>
+<div class="grid-topo">
+    <p> Área do Presidente</p>
+    <img class="imgUser" src="img/user.png" alt="">Usuário:
+    <div>
+        <a href="areaAdm.html">Inicio</a>
+    </div>
+    <div>
+        <a href="login.html">Sair</a>
+    </div>
+</div>
+<div class="navbar">
+    <div>
+        <a href="cadastrarUser.html">Cadastrar Usuário</a>
+    </div>
+    <div>
+        <a href="addProtocolo.html">Novo Protocolo</a>
+    </div>
+    <div>
+        <a href="avaliProtocolo.html">Avaliar Protocolo</a>
+    </div>
+    <div>
+        <a href="protocoloPendente.html">Protocolos Pendentes</a>
+    </div>
+    <div>
+        <a href="protocoloConcluido.html">Protocolos Concluídos</a>
+    </div>
+    <div>
+        <a href="parecerista.html">Atribuir Parecerista</a>
+    </div>
+</div>
+
+<body class="fundo-cadastroSecret">
+    <form method="POST" class="form3">
+
+        <div class="campo-prot">
+            <div class="campo-protocolo">
+                <h2 class="titulo"> Adicionar novo Protocolo</h2>
+            </div>
+            <div class="campo-resumo">
+                <label for="animal"> Especie do Animal: </label>
+                <input type="text" name="animal" id="animal" placeholder="Digite a espécie do Animal" class="animalSecret" required maxlength="20">
+                <label for="quantidade"> Quantidade: </label>
+                <input type="text" name="quantidade" id="quantidade" placeholder="Digite a Quantidade" class="animalSecret" required maxlength="20">
+                <label for="bioterio"> Biotério: </label>
+                <input type="text" name="bioterio" id="bioterio" placeholder="Digite o Biotério" class="animalSecret" required maxlength="20">
+                <div class="resumos">
+                    <h3>Justifique no campo abaixo o uso do animal :</h3>
+                    <textarea rows="6" ,cols="2" placeholder="Justifique aqui o uso do animal " required></textarea>
+                    <h3> Resumo do Trabalho - Português: </h3>
+                    <textarea rows="6" ,cols="2" placeholder="Faça seu resumo aqui " required></textarea>
+                    <h3> Resumo do Trabalho- Inglês: </h3>
+                    <textarea rows="6" ,cols="2" placeholder="Make your summary here " required></textarea>
+                </div>
+                <div class="dataPesquisa">
+                    <label for="date"> Dia que pretende terminar pesquisa: </label>
+                    <input id="date" type="date" required>
+                </div>
+            </div>
+
+        </div>
+        <div class="campo-prot">
+            <div class="campo-protocolo">
+
+                <div class="campo-cadastroProt">
+                    <button class="botaoCadastrarProtocolo" type="submit"> Cadastrar </button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </form>
+    <!-- <form method="POST" class="form3">
+   
+
+    </form> -->
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Presidente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="X-UA-Compatible" content="pt_br" />
+
+    <link rel="stylesheet" href="CSS/style-adm.css">
+    <link rel="stylesheet" href="CSS/style-cadastro.css">
+    <link rel="stylesheet" href="CSS/style-parecerista.css">
+
+</head>
+<div class="grid-topo">
+    <p> Área do Presidente</p>
+    <img class="imgUser" src="img/user.png" alt="">Usuário:
+    <div>
+        <a href="areaAdm.html">Inicio</a>
+    </div>
+    <div>
+        <a href="login.html">Sair</a>
+    </div>
+</div>
+
+<div class="navbar">
+    <div>
+        <a href="cadastrarUser.html">Cadastrar Usuário</a>
+    </div>
+    <div>
+        <a href="addProtocolo.html">Novo Protocolo</a>
+    </div>
+    <div>
+        <a href="avaliProtocolo.html">Avaliar Protocolo</a>
+    </div>
+    <div>
+        <a href="protocoloPendente.html">Protocolos Pendentes</a>
+    </div>
+    <div>
+        <a href="protocoloConcluido.html">Protocolos Concluídos</a>
+    </div>
+    <div>
+        <a href="parecerista.html">Atribuir Parecerista</a>
+    </div>
+</div>
+
+<body class="fundo-cadastroSecret">
+
+    <form method="POST" class="form6">
+        <div class="campo">
+            <div class="campo-top">
+
+                <h2 class="titulo"> Atribuir Parecerista</h2>
+                <div id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar Protocolo..." />
+                    <button id="btnBusca">Buscar</button>
+                </div>
+                <div class="dadosProto">
+
+                    <label>Código do Protocolo: &nbsp</label>
+                    <label>00000</label> &nbsp&nbsp&nbsp&nbsp
+                    <label>Nome do usuário : &nbsp</label>
+                    <label>XxxNomexxX</label> &nbsp&nbsp&nbsp&nbsp
+                    <label>Data exibição: &nbsp</label>
+                    <label>00/00/0000</label> &nbsp&nbsp&nbsp&nbsp
+                    <label>Parecer: &nbsp</label>
+                    <label>Recomendado ou Não</label>
+                    <a href="visualizarProtocolo.html" class="btn btn-sm">Visualizar</a><br>
+
+
+                    <div class="campo-cadastro1">
+                        <label for="name"> Parecerista: </label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o nome Parecerista" class="nomeSecret" required maxlength="30">
+                    </div>
+                    <div class="campo-cadastro">
+                        <button class="botaoCadastrar" type="submit"> Atribuir Parecerista </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

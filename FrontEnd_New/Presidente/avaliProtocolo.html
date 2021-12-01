@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Presidente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="X-UA-Compatible" content="pt_br" />
+
+    <link rel="stylesheet" href="CSS/style-adm.css">
+    <link rel="stylesheet" href="CSS/style-cadastro.css">
+    <link rel="stylesheet" href="CSS/style-avaliProtocolo.css">
+
+
+</head>
+
+<div class="grid-topo">
+    <p> Área do Presidente</p>
+    <img class="imgUser" src="img/user.png" alt="">Usuário:
+    <div>
+        <a href="areaAdm.html">Inicio</a>
+    </div>
+    <div>
+        <a href="login.html">Sair</a>
+    </div>
+</div>
+<div class="navbar">
+
+    <div>
+        <a href="cadastrarUser.html">Cadastrar Usuário</a>
+    </div>
+    <div>
+        <a href="addProtocolo.html">Novo Protocolo</a>
+    </div>
+    <div>
+        <a href="avaliProtocolo.html">Avaliar Protocolo</a>
+    </div>
+    <div>
+        <a href="protocoloPendente.html">Protocolos Pendentes</a>
+    </div>
+    <div>
+        <a href="protocoloConcluido.html">Protocolos Concluídos</a>
+    </div>
+    <div>
+        <a href="parecerista.html">Atribuir Parecerista</a>
+    </div>
+</div>
+
+<body class="fundo-cadastroSecret">
+    <!-- <div class="titulo-avaliar">
+        <h2>Avalie Protocolo</h2>
+    </div> -->
+
+    <form method="POST" class="form3">
+
+        <div class="avalie-proto">
+            <div class="titulo">
+                <h2>Resumo do trabalho - Português :</h2>
+            </div>
+            <div class="resumo">
+                <p> RESUMO DO TRABALHO....</p>
+            </div>
+            <div class="titulo">
+                <h2>Resumo do trabalho - Inglês :</h2>
+            </div>
+            <div class="resumo">
+                <p> RESUMO DO TRABALHO....</p>
+            </div>
+            <div class="titulo">
+                <h2>Justificativa do trabalho:</h2>
+            </div>
+            <div class="resumo">
+                <p> JUSTIFICATIVA....</p>
+            </div>
+        </div>
+        <div class="avalie-proto">
+            <div class="titulo">
+                <h2>Informações do Projeto :</h2>
+            </div>
+            <br>
+            <div class="dadosUsuario">
+                <h3><label>Usuário:</label>
+                    <label>Nome do Usuário</label><br>
+                    <label>Codigo:</label>
+                    <label>Codigo do Usuário</label></h3><br>
+            </div>
+            <div class="dadosAvaliador">
+                <h3><label>Avaliador:</label>
+                    <label>Nome do Avaliador</label><br>
+                    <label>Codigo:</label>
+                    <label>Codigo do Avaliador</label></h3><br>
+            </div>
+            <div class="dadosAvaliador">
+                <h3><label>Especie do Animal:</label>
+                    <label>Animal</label><br>
+                    <label>Quantidade:</label>
+                    <label>Quantidade de animais</label><br>
+                    <label>Biotério:</label>
+                    <label>Biotério</label>
+                </h3><br>
+            </div>
+            <h3>Parecer : </h3>
+            <div>
+                <select class="classic" name="select">
+                    <option value="0" id="selecione" name="selecione">Selecione uma opção...</option>
+                    <option value="1" id="recomendado" name="recomendado" selected>Recomendado para uso</option>
+                    <option value="2" id="naorecomendado" name="naorecomendado" selected>Não recomendado para uso</option>
+                  </select>
+            </div>
+            <br>
+            <div class="button-avali">
+                <button type="submit"> Concluir avaliação </button>
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
