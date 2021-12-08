@@ -1,4 +1,4 @@
-História de Usuário: Como Pesquisador quero poder enviar um protocolo para um especialista para avaliar minha pesquisa
+História de Usuário: Como Pesquisador quero poder encaminhar um protocolo para um especialista para avaliar minha pesquisa.
 
 Cenário de Aceite
 
@@ -6,4 +6,4 @@ Dado que eu abra o sistema
 E clique em novo protocolo
 E coloque os dados necessários
 Quando eu clicar em enviar
-Então o sistema abrirá a mensagem de protocolo enviado
+Então o sistema abrirá a mensagem informando que o de protocolo foi enviado
