@@ -1,7 +1,13 @@
-# SistemaParaControledeExperimentaçãoAnimal
-Sistema online no Heroku (https://spcdea.herokuapp.com/index.php)
+# Sistema Para Controle de Experimentação Animal
 
-Funcionalidades
-/nLogin.
-Cadastro de usuários.
-Cadastro de Protocolos.
+<h4 align="left"> 
+ Projeto em desenvolvimento...
+</h4>
+
+### Features
+
+- [x] Login
+- [x] Cadastro de Usuários
+- [ ] Cadastro de Protocolos
+
+<p>Sistema online no Heroku (https://spcdea.herokuapp.com/index.php)</p>
