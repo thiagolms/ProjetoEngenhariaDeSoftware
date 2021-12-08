@@ -4,6 +4,6 @@ Cenário de Aceite
 
 Dado que eu abra o sistema
 E clique em me cadastrar
-E insira meus dados
+E insira meus dados: Nome, CPF, RG, email, senha, sexo e data de nascimento
 Quando eu clicar em finalizar
 Então o sistema enviará minha solicitação para o administrador
