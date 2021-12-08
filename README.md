@@ -8,6 +8,6 @@
 
 - [x] Login
 - [x] Cadastro de Usuários
-- [ ] Cadastro de Protocolos
+- [x] Cadastro de Protocolos
 
 <p>Sistema online no Heroku (https://spcdea.herokuapp.com/index.php)</p>
