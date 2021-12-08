@@ -1,1 +1,9 @@
-- Aqui serão colocados as histórias de usuários.
+História de Usuário: Como secretária quero permissão para me cadastrar no sistema;
+
+Cenário de Aceite
+
+Dado que eu abra o sistema
+E clique em me cadastrar
+E insira meus dados
+Quando eu clicar em finalizar
+Então o sistema enviará minha solicitação para o administrador

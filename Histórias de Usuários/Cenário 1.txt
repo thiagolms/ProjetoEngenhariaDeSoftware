@@ -1,1 +1,10 @@
-- Aqui serão colocados as histórias de usuários.
+História de Usuário: Como Pesquisador quero me cadastrar para poder acessar o sistema
+
+Cenário de Aceite
+
+Dado que eu abra a página de cadastro
+Abrirá uma tela onde vai requerer todos os dados do pesquisador
+Quando eu inserir os dados solicitados
+Então o sistema enviará minha solicitação de cadastro ao administrador
+Quando chegar a solicitação, o administrador receberá uma notificação para aceitar o cadastro.
+A partir do aceite do administrador, o pesquisador pode utilizar o sistema.

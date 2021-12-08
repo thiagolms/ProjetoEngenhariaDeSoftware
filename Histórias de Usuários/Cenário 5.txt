@@ -1,1 +1,8 @@
-- Aqui serão colocados as histórias de usuários.
+História de Usuário: Como pesquisador quero saber quais são os biotérios cadastrados e quantos animais e as variedades de espécies que eles tens disponíveis;
+
+Cenário de Aceite
+
+Dado que eu faça meu login
+E procure por biotérios cadastrados
+Quando eu escolher um e apertar nele
+Então o sistema me mostrará os quantos animais estão disponíveis, quais são e suas espécies e quantos eu posso pedir ao total.

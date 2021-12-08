@@ -1,1 +1,9 @@
-- Aqui serão colocados as histórias de usuários.
+História de Usuário: Como Pesquisador quero poder enviar um protocolo para um especialista para avaliar minha pesquisa
+
+Cenário de Aceite
+
+Dado que eu abra o sistema
+E clique em novo protocolo
+E coloque os dados necessários
+Quando eu clicar em enviar
+Então o sistema abrirá a mensagem de protocolo enviado
