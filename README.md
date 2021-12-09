@@ -10,4 +10,5 @@
 - [x] Cadastro de Usuários
 - [x] Cadastro de Protocolos
 
-<p>Sistema online no Heroku (https://spcdea.herokuapp.com/index.php)</p>
+<p>Sistema online no Heroku: https://spcdea.herokuapp.com/index.php</p>
+<p>Trello do projeto: https://trello.com/b/DqJ0uhPM/template-kanban</p>
