@@ -2,8 +2,8 @@ História de Caso: Como Administrador quero liberar o acesso que cada perfil cad
 
 Cenário de Aceite
 
-Dado que eu abra o sistema
-E me dirigir na parte de novos usuários
+Dado que eu abra o sistema;
+E me dirigir na parte de novos usuários;
 E analisar os dados de cada um
 A partir do momento de que os dados do usuário são verdadeiros
 O sistema enviará um código para os usuários autorizados
