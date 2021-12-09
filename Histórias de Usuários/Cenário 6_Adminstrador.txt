@@ -4,7 +4,7 @@ Cenário de Aceite
 
 Dado que eu abra o sistema;
 E me dirigir na parte de novos usuários;
-E analisar os dados de cada um
-A partir do momento de que os dados do usuário são verdadeiros
-O sistema enviará um código para os usuários autorizados
+E analisar os dados de cada um;
+A partir do momento de que os dados do usuário são verdadeiros;
+O sistema enviará um código para os usuários autorizados;
 Quando esse código chegar para os usuários, este deve confirmar o código no sistema e assim ter permissão para acessar sua conta.
