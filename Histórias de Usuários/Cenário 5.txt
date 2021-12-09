@@ -4,5 +4,5 @@ Cenário de Aceite
 
 Dado que eu faça meu login;
 E procure por biotérios cadastrados;
-Quando eu escolher um e selecionar ele
+Quando eu escolher um e selecionar ele;
 Então o sistema me mostrará quantos animais estão disponíveis, quais são suas espécies e quantos eu posso pedir ao total.
