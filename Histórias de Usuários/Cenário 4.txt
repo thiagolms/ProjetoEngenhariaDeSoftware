@@ -1,6 +1,6 @@
 História de Usuário: Como secretária quero ter acesso aos protocolos
 
-Cenário de Aceite
+#Cenário de Aceite
 
 Dado que eu abra meu login;
 E acesse a minha caixa de mensagem;
