@@ -2,8 +2,8 @@ História de Usuário: Como Pesquisador quero poder encaminhar um protocolo para
 
 Cenário de Aceite
 
-Dado que eu abra o sistema
-E clique em novo protocolo
-E coloque os dados necessários
-Quando eu clicar em enviar
-Então o sistema abrirá a mensagem informando que o de protocolo foi enviado
+Dado que eu abra o sistema;
+E clique em novo protocolo;
+E coloque os dados necessários;
+Quando eu clicar em enviar;
+Então o sistema abrirá a mensagem informando que o de protocolo foi enviado.
