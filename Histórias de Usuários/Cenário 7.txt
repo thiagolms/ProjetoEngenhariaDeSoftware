@@ -2,8 +2,8 @@ História de Usuário: Como administrador quero ter acesso ao banco de dados par
 
 Cenário de Aceite
 
-Dado que eu abra o sistema como administrador
-Vai se carregar uma tela informando as ações que o administrador pode fazer
+Dado que eu abra o sistema como administrador;
+Vai se carregar uma tela informando as ações que o administrador pode fazer;
 Entrando na aba de "Todos os usuários";
 Abrirá uma tela informativa sobre os usuários;
 Então o sistema me mostrará quantos usuário tem e os dados correspondentes a cada um deles e suas atividades.
