@@ -7,4 +7,4 @@ Uma tela sera aberta solicitando todos os dados do pesquisador: Nome, email, CPF
 Quando eu inserir os dados solicitados;
 Então o sistema enviará minha solicitação de cadastro ao administrador;
 Quando chegar a solicitação, o administrador receberá uma notificação para validar o cadastro;
-A partir do aceite do administrador, o pesquisador pode utilizar o sistema
+A partir do aceite do administrador, o pesquisador pode utilizar o sistema.
