@@ -2,8 +2,9 @@ História de Usuário: Como secretária quero permissão para me cadastrar no si
 
 Cenário de Aceite
 
-Dado que eu abra o sistema
-E clique em me cadastrar
-E insira meus dados: Nome, CPF, RG, email, senha, sexo e data de nascimento
-Quando eu clicar em enviar
-Então o sistema enviará minha solicitação para o administrador
+Dado que eu abra o sistema;
+E clique em me cadastrar;
+E insira meus dados: Nome, CPF, RG, email, senha, sexo e data de nascimento;
+Quando eu clicar em enviar;
+Então o sistema enviará minha solicitação para o administrador;
+Quandro a solicitação chegar para o administrador ele deve validar meus dados para que eu possa usar o sistema.
