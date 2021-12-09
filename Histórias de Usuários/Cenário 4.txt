@@ -2,7 +2,7 @@ História de Usuário: Como secretária quero ter acesso aos protocolos
 
 Cenário de Aceite
 
-Dado que eu abra meu login
+Dado que eu abra meu login;
 E acesse a minha caixa de mensagem
 E abra o protocolo enviado
 E abra a lista de pesquisadores-avaliadores
